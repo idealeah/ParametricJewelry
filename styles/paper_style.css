@@ -1,0 +1,182 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    height: 100%;
+    background-color: rgb(241, 241, 241);
+    font-family: 'Work Sans', sans-serif;
+}
+
+h1 {
+    margin: 0;
+    color: rgb(161, 161, 161);
+    font-family: 'Work Sans', sans-serif;
+    display: block;
+}
+
+.menuLink {
+    display: inline-block;
+    outline: none;
+    color: rgb(0, 8, 56);
+    text-decoration: none;
+    font-size: 1em;
+}
+
+#boxClear {
+    margin-left: 32px;
+}
+
+#fixedMenu {
+    display: block;
+    padding-top: 32px;
+    padding-left: 32px;
+}
+
+
+#main {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+#slider {
+    margin: 10px;
+    flex-grow: 2;
+    margin-left: 32px;
+}
+
+#stepText {}
+
+.shapeButton {
+    width: 32px;
+    padding: 5px;
+}
+
+.shapeButton :hover {
+    fill: rgb(255, 0, 119);
+}
+
+#title {
+    padding-left: 32px;
+    padding-bottom: 32px;
+    display: block;
+}
+
+#lowerTitle {
+    padding-top: 24px;
+    display: flex;
+    align-items: center;
+}
+
+#menu {
+    padding-left: 32px;
+    padding-right: 32px;
+    display: inline-flex;
+    width: 60%;
+    align-items: center;
+}
+
+#inputNum {
+    width: 24px;
+    margin-left: 32px;
+}
+
+.genButton {
+    font-family: 'Work Sans',
+        sans-serif;
+    padding: 8px;
+    margin: 10px;
+    border: none;
+    background-color: rgb(0, 0, 0);
+    font-weight: bold;
+    color: rgb(241, 241, 241);
+}
+
+.genButton:hover {
+    background-color: rgb(255, 0, 119);
+}
+
+.paper-text {
+    padding-right: 10px;
+}
+
+/* Scale canvas with resize attribute to full size */
+canvas[resize] {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1/1;
+}
+
+a:hover {
+    color: rgb(255, 0, 119);
+}
+
+span#menu {
+    position: absolute;
+    top: 2em;
+    left: 0px;
+    width: 50px;
+    height: 40px;
+    font-size: 30px;
+    cursor: pointer;
+    background-color: rgb(2, 0, 105);
+}
+
+#download-to-svg {
+    font-family: 'Work Sans',
+        sans-serif;
+    border: none;
+    background-color: rgb(255, 0, 119);
+    padding: 10px;
+    margin-left: 10px;
+    font-weight: bold;
+    color: rgb(241, 241, 241);
+}
+
+
+#download-to-svg:hover {
+    background-color: rgb(0, 0, 0);
+}
+
+.sidenav {
+    height: 150px;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 25px;
+    left: 0;
+    background-color: rgb(2, 0, 105);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    color: #b4b4b4;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #ffce2e;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 36px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
