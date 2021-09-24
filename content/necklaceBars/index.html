@@ -8,9 +8,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="../../library/jquery-ui.css" />
+    <script src="../../library/jquery-ui.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Arvo|Work+Sans" rel="stylesheet">
     <script type="text/javascript" src="../../scripts/paper-full.js"></script>
     <script type="text/javascript" src="../../scripts/script.js"></script>
+    <script type="text/javascript" src="../../scripts/necklaceBarGUI.js"></script>
     <script language="javascript" type="text/javascript" src="../../scripts/perlin.js"></script>
     <script type="text/paperscript" src="../../scripts/necklaceBars.js" canvas="myCanvas">
     </script>
@@ -18,10 +21,28 @@
 
 <body>
     <div id=main>
-        <h1>necklace bars</h1>
-        <div class="paper-text">
-            Draw in the box to create your link shape.
-            Press <b>p</b> to create your file and <b>s</b> to download it.
+        <div id="fixedMenu">
+            <a href="./../index.html" class="menuLink">generate</a>/<a href="./../use.html" class="menuLink">make</a>/<a
+                href="./../about.html" class="menuLink">about</a>
+        </div>
+        <div id=title>
+            <h1>bar necklace</h1>
+            <div id=lowerTitle>
+                <div class="paper-text">
+                    An elegant necklace <br /> with hand-drawn detail
+                </div>
+                <button id="download-to-svg">download SVG</button>
+            </div>
+        </div>
+        <div id=menu>
+            <div id="stepText">Draw a shape in each box <br /> to create your link shape</div>
+            <button class="genButton" id="boxClear">
+                Clear Drawing
+            </button>
+            <button class="genButton" id="fileMake">
+                Prepare File
+            </button>
+            <div id="slider"></div>
         </div>
     </div>
     <canvas id="myCanvas" resize></canvas>

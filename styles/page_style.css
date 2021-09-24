@@ -13,6 +13,7 @@ h1#title {
   font-size: 2em;
 }
 
+
 #fixedContainer {
   position: fixed;
   top: 0px;
@@ -23,9 +24,9 @@ h1#title {
 
 
 #fixedMenu {
-  padding-top: 2em;
-  padding-left: 2em;
-  padding-bottom: 2em;
+  padding-top: 32px;
+  padding-left: 32px;
+  padding-bottom: 32px;
 }
 
 .page-text {
@@ -46,10 +47,16 @@ h1#title {
   color: rgb(255, 0, 119);
 }
 
+#mainFront {
+  display: block;
+  margin-top: 96px;
+  padding: 32px;
+}
 
 #main {
-  padding: 2em;
-  margin-top: 6em;
+  display: block;
+  margin-top: 72px;
+  padding: 36px;
 }
 
 #img-links {

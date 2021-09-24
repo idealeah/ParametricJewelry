@@ -28,45 +28,7 @@ var allGroup = new Group();
 window.dotTest = true;
 
 window.globals = {}
-/*
-var text = new PointText(new Point(30, 30));
-var text = new PointText(new Point(30, 40));
-text.fontFamily = "Trebuchet MS";
-text.fillColor = 'black';
-text.fontSize = 25;
 
-// Set the content of the text item:
-text.content = 'Select your cube width. Press "p" to create your file and "s" to download the file.';
-
-var text2 = new PointText(new Point(30, 120));
-text2.fillColor = 'black'
-text2.fontWeight= 'bold';
-text2.fontFamily = "Trebuchet MS";
-text2.fontSize = 25;
-
-// Set the content of the text item:
-//text2.content = 'Press "3", "4", or "5" to select triangle, square, or pentagon shaped cutouts.';
-*/
-// var text3 = new PointText(new Point(30, 65));
-// text3.fillColor = "black";
-// text3.fontWeight = "bold";
-// text3.fontFamily = "Trebuchet MS";
-// text3.fontSize = 20;
-
-// // Set the content of the text item:
-// text3.content = "Cutout shape is a triangle.";
-
-// var textX = new PointText(new Point(30, 40));
-// textX.fillColor = "black";
-// textX.fontWeight = "bold";
-// textX.fontFamily = "Trebuchet MS";
-// textX.fontSize = 20;
-
-// // Set the content of the text item:
-// textX.content =
-//   "Cube side length is " +
-//   mainRectSize.width +
-//   '. Press "1" to subtract or "2" to add.';
 
 //rect.strokeColor= 'black;'
 function onMouseDown(event) {
@@ -117,52 +79,6 @@ function onMouseUp(event) {
 
     //rect.remove();
   }
-}
-
-function onKeyDown(event) {
-  // if (event.key === "s") {
-  //   globals.downloadAsSVG();
-  // }
-
-  // if (event.key === "p") {
-  //   globals.printPrep();
-  // }
-
-  // if (event.key === "2") {
-  //   mainRectSize.width += 5;
-  //   // Set the content of the text item:
-  //   textX.content =
-  //     "Cube side length is " +
-  //     mainRectSize.width +
-  //     '. Press "1" to subtract or "2" to add.';
-  // }
-  // if (event.key === "1") {
-  //   mainRectSize.width -= 5;
-  //   textX.content =
-  //     "Cube side length is " +
-  //     mainRectSize.width +
-  //     '. Press "1" to subtract or "2" to add.';
-  // }
-
-  // if (event.key === "3") {
-  //   //text3.content = "Cutout shape is a triangle.";
-  //   window.dotTest = true;
-  //   dotSides = 3;
-  // }
-  // if (event.key === "4") {
-  //   //text3.content = "Cutout shape is a square.";
-  //   window.dotTest = true;
-  //   dotSides = 4;
-  // }
-  // if (event.key === "5") {
-  //   // text3.content = "Cutout shape is a pentagon.";
-  //   window.dotTest = true;
-  //   dotSides = 5;
-  // }
-  // if (event.key === "6") {
-  //   //  text3.content = "No cutouts.";
-  //   window.dotTest = false;
-  // }
 }
 
 globals.downloadAsSVG = function (fileName) {
@@ -366,3 +282,5 @@ globals.printPrep = function () {
   // textX.remove();
   console.log(project);
 }
+
+globals.printPrep();

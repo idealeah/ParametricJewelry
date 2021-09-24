@@ -21,10 +21,6 @@ h1 {
     font-size: 1em;
 }
 
-#boxClear {
-    margin-left: 32px;
-}
-
 #fixedMenu {
     display: block;
     padding-top: 32px;
@@ -44,7 +40,9 @@ h1 {
     margin-left: 32px;
 }
 
-#stepText {}
+#stepText {
+    padding-right: 32px;
+}
 
 .shapeButton {
     width: 32px;
